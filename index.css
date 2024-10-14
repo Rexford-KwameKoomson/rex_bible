@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+}
+/* Body styles */
+body {
+    /* text-align: center; */
+    color: #fff;
+    background-image: url(./image/jonny-swales-fIDIgxZpdSM-unsplash.jpg);
+    background-size: cover; 
+    background-position: center; /* Centers the background image */
+    font-family: "Roboto Condensed", sans-serif; 
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    font-size: 50px;
+    letter-spacing: 2px;
+    padding: 2rem;
+}
+
+input{
+    width: 400px;
+    padding: 0.7rem 10px;
+    border-radius: 5px;
+    border: none;
+}
+button{
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: none;
+    font-weight: 800;
+}
+/* Preloader styles */
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.7); /* Dark background for better visibility */
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999; 
+}
+
+.preloader .loader {
+    border: 8px solid #f3f3f3; 
+    border-top: 8px solid #3498db; 
+    border-radius: 50%; /* Makes it a circle */
+    width: 50px; /* Width of the loader */
+    height: 50px; /* Height of the loader */
+    animation: spin 1s linear infinite; /* Animation for spinning effect */
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Reference preview styles */
+.ref_pre {
+    color: #fff;
+    font-family: "Roboto Condensed", sans-serif;
+    font-weight: 500;
+    line-height: 1.8rem;
+    border: rgba(11,120, 10,0.5); 
+    /* Rounded corners */
+    border-radius: 10px; 
+    padding: 20px; 
+    /* Padding for inner spacing */
+    margin-top: 20px; 
+    /* Space above the reference preview */
+    background-color: rgba(0, 0, 0, 0.5); 
+    width: 500px;
+    height: 350px;
+    overflow: scroll;
+}
+
+/* Container styles */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh; 
+    width: 50vw;/* Full viewport height */
+}
+.ref_pre::-webkit-scrollbar{
+    background-color: transparent;
+}
+.ref_pre::-webkit-scrollbar-corner{
+    border-radius: 20px;
+}
+@media (max-width: 500px){
+    .ref_pre{
+        width: 330px;
+    }
+    input{
+        width: 300px;
+    }
+    h2{
+        text-align: center;
+    }
+}
+/* 
+@media (max-width: 850px){
+    .ref_pre{
+        width: 530px;
+    }
+} */

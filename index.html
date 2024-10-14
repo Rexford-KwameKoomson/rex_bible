@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+    <title>Personal Bible</title>
+</head>
+<body>
+    <div class="preloader" id="preloader">
+        <div class="loader"></div>
+    </div>
+    
+    <div class="container">
+        <h2>Personal Bible</h2>
+        <input type="text" id="textVerse" placeholder="Enter verse reference" aria-label="Verse reference"> <br> <br>
+        <button id="btnSearch" aria-label="Search for the verse">Search</button>
+        <div id="previewContainer" class="ref_pre" aria-live="polite">
+            <span id="reference"></span> <br> 
+            <span id="preview"></span>
+        </div>
+    </div>
+    <script src="bib.js"></script>
+</body>
+</html>
